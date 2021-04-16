@@ -1,0 +1,383 @@
+/* ROOT START */
+
+@import "fonts.css";
+
+:root {
+    --f100: "Montserrat Thin";
+    --f300: "Montserrat Light";
+    --f400: "Montserrat Regular";
+    --f700: "Montserrat Bold";
+    --f900: "Montserrat Black";
+    --green: #68bf3b;
+    --green20: rgba(103, 191, 59, 0.20);
+    --gray: #bdbdbd;
+    --green-btn: linear-gradient(to bottom, #6ad017, #3d8701);
+    --dark: #060503;
+    --col-1: calc( 100 / 1 );
+    --col-2: calc( 100 / 12 * 2 );
+    --col-3: calc( 100 / 12 * 3 );
+    --col-4: calc( 100 / 12 * 4 );
+    --col-5: calc( 100 / 12 * 5 );
+    --col-6: calc( 100 / 12 * 6 );
+    --col-7: calc( 100 / 12 * 7 );
+    --col-8: calc( 100 / 12 * 8 );
+    --col-9: calc( 100 / 12 * 9 );
+    --col-10: calc( 100 / 12 * 10 );
+    --col-11: calc( 100 / 12 * 11 );
+    --col-12: calc( 100% );
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--f400);
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-1 {
+    width: var(--col-1);
+    padding: 0 15px;
+}
+
+.col-2 {
+    width: var(--col-2);
+    padding: 0 15px;
+}
+
+.col-3 {
+    width: var(--col-3);
+    padding: 0 15px;
+}
+
+.col-4 {
+    width: var(--col-4);
+    padding: 0 15px;
+}
+
+.col-5 {
+    width: var(--col-5);
+    padding: 0 15px;
+}
+
+.col-6 {
+    width: var(--col-6);
+    padding: 0 15px;
+}
+
+.col-7 {
+    width: var(--col-7);
+    padding: 0 15px;
+}
+
+.col-8 {
+    width: var(--col-8);
+    padding: 0 15px;
+}
+
+.col-9 {
+    width: var(--col-9);
+    padding: 0 15px;
+}
+
+.col-10 {
+    width: var(--col-10);
+    padding: 0 15px;
+}
+
+.col-11 {
+    width: var(--col-11);
+    padding: 0 15px;
+}
+
+.col-12 {
+    width: var(--col-12);
+    padding: 0 15px;
+}
+
+.mh-100 {
+    height: 100vh;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: var(--f700);
+    line-height: 17px;
+}
+
+/* ROOT END */
+
+/* HEADER START */
+
+.header {
+    background: url(../images/header_bg.jpg) no-repeat center /cover;
+    background-attachment: fixed;
+    padding-top: 30px;
+}
+
+.header__num {
+    color: #fff;
+    font-size: 24px;
+    line-height: 23px;
+}
+
+.header__callback {
+    color: #fff;
+    background: var(--green);
+    max-width: 200px;
+    width: max-content;
+    padding: 18px 25px;
+    border-radius: 24px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.header__text {
+    color: #fff;
+    font-size: 18px;
+    font-family: var(--f900);
+    text-transform: uppercase;
+}
+
+.header__text:first-of-type {
+    line-height: 13px;
+}
+
+.header__text:nth-of-type(2) {
+    font-size: 72px;
+    line-height: 53px;
+    margin: 35px 0 40px 0;
+}
+
+.header__text:last-of-type {
+    font-family: var(--f400);
+    font-size: 18px;
+    line-height: 13px;
+}
+
+.header__btn {
+    max-width: 200px;
+    width: 100%;
+    color: #fff;
+    background: var(--green-btn);
+    padding: 20px 42px;
+    font-size: 16px;
+    border-radius: 24px;
+    margin-top: 50px;
+}
+
+/* HEADER END */
+
+/* MAIN START */
+
+.main {
+    padding: 50px 0 100px 0;
+}
+
+.main__article-info {
+    margin-left: 30px;
+}
+
+.main__article-title {
+    color: var(--green);
+    font-size: 36px;
+    font-family: var(--f700);
+    text-transform: uppercase;
+    line-height: 26px;
+    margin-bottom: 55px;
+}
+
+.main__article-text {
+    color: var(--gray);
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.main__article-author {
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+    font-family: var(--f700);
+    font-size: 24px;
+    line-height: 22px;
+}
+
+.main__article-author:after {
+    content: url(../images/подпись.png);
+    display: block;
+    margin-left: 60px;
+
+}
+
+.main__pizza {
+    margin: 65px 0 150px 0;
+}
+
+.main__pizza-item {
+    margin-bottom: 50px;
+}
+
+.main__pizza-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main__pizza-title {
+    color: var(--green20);
+    font-size: 36px;
+    font-family: var(--f700);
+    line-height: 26px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.main__pizza-info {
+    margin-left: 30px;
+}
+
+.main__pizza-name {
+    color: var(--gray);
+    font-family: var(--f700);
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+.main__pizza-list {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.main__pizza-price {
+    color: var(--gray);
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.main__pizza span {
+    font-size: 30px;
+    font-family: var(--f700);
+}
+
+.main__pizza-order {
+    max-width: 200px;
+    width: max-content;
+    color: #fff;
+    background: var(--green-btn);
+    padding: 20px 30px;
+    font-size: 16px;
+    border-radius: 24px;
+    display: block;
+}
+
+.main__pizza-img {
+    display: block;
+    position: relative;
+}
+
+.main__pizza-offer {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 18px;
+    line-height: 13px;
+    padding: 23px 8px 24px 7px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: var(--f700);
+    background: var(--green);
+}
+
+.main__review-item {
+    max-width: 350px;
+    width: 100%;
+}
+
+.main__review-name {
+    color: var(--gray);
+    margin: 28px 0 15px 0;
+    font-size: 14px;
+    line-height: 15px;
+    font-family: var(--f700);
+    text-transform: uppercase;
+}
+
+.main__review-text {
+    color: var(--gray);
+    font-family: var(--f400);
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* MAIN END */
+
+/* FOOTER */
+
+.footer {
+    padding: 30px 0 55px 0;
+    background: var(--dark);
+}
+
+.footer__text {
+    color: var(--gray);
+    font-family: var(--f100);
+    font-size: 16px;
+    line-height: 14px;
+    margin-top: 50px;
+}
+
+/* FOOTER END */
